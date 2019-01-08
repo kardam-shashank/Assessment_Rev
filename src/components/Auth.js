@@ -20,8 +20,8 @@ class Auth extends Component{
     render(){
         return(
             <div>
-                {this.state.login?<Login handleLogin={this.props.handleLogin}/>:<Signup toggleLogin={this.toggleLogin}/>}
-                {this.state.login ? <button onClick={this.toggleLogin}>Sign up</button> : <button onClick={this.toggleLogin}>Login</button>}
+                {this.state.login?<Login handleLogin={this.props.handleLogin}/>:<Signup toggleLogin={this.toggleLogin} />}
+                {this.state.login ? <button className= "button btn-signup wrap" onClick={this.toggleLogin}>Sign up</button> : <button className= "button btn-signup wrap" onClick={this.toggleLogin}>Login</button>}
             </div>
         )
     }
